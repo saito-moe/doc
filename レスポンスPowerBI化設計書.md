@@ -61,7 +61,7 @@ sequenceDiagram
 ## 5. テーブル設計
 　　[テーブル定義書](https://egaogroup.sharepoint.com/:x:/r/sites/shr0012/Shared%20Documents/MI%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%ABPowerBI%E5%8C%96/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8_%E6%97%A2%E5%AD%98PowerBI%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E4%BD%9C%E6%88%90%E8%87%AA%E5%8B%95%E5%8C%96.xlsx?d=w3211ede16db04e89b176004e8988d1ae&csf=1&web=1&e=1NSOiE)
   
-## 6. ER図（Entity Relationship Diagram）
+## 6. ER図
 <img width="1308" height="1124" alt="image" src="https://github.com/user-attachments/assets/8e0b1a9d-1029-46df-a1bc-40214a482b09" />
 
 <!--
@@ -113,7 +113,7 @@ erDiagram
     KDB_DM_出荷売上情報 ||--o{ KDB_DT_レスポンス休止者 : "集計元（売上）"
 -->
  
-## 7. フローチャート（Entity Relationship Diagram）
+## 7. フローチャート
 ```mermaid
 graph TD
 
