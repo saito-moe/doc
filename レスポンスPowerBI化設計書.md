@@ -22,6 +22,30 @@
 
 ## 2. 業務フロー
 ```mermaid
+flowchart LR
+    subgraph システム
+        subgraph サーバー
+            A1[(KDB_DT_受注実績情報)] 
+            B1[(KDB_DT_レスポンス出荷者)]
+            B2[(KDB_DT_レスポンス休止者)]
+    end
+        subgraph Hinemos
+            A[JNDW0310（受注実績データ作成）]
+            B[JNDW0311（レスポンスデータ作成）]
+                end
+
+                C[PowerBIレポート]
+        end
+
+    subgraph 利用者
+        D[分析]
+    end
+
+    A --> |毎日更新| A1 --> B --> B1 -->C
+    B --> B2 --> C --> D
+```
+<!--
+```mermaid
 journey
     section Hinemos
       JNDW0310(受注実績データ): 1: Computer
@@ -35,6 +59,7 @@ journey
     section User
       分析: 7: Me
 ```
+-->
 
 ## 3. システム構成図
 
