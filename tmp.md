@@ -25,11 +25,10 @@ H -->|No| H2["⇒ '休止DM'"]
 F -->|その他の値| I["⇒ フリーコールマスタ.分析媒体名称"]
 ```
 
-現状
+品管現状
 ```mermaid
 flowchart　LR
 subgraph 分析レポート
-    R1(相談室用PowerBI)
      R2(算出用Excel)
 end
 subgraph 品管データ
@@ -37,23 +36,13 @@ subgraph 品管データ
     D2[都度Excel] --> R2
     A2[品管関連申し出データ] --> R2
 end
-subgraph 相談室データ
-    A1[体調変化申し出データ] --> R1
-    B1[全顧客数.csv] --> R1
-    C1[定期顧客.csv] --> R1
-    D1[都度顧客.csv] --> R1
-end
 subgraph 対話データ
-    E1[自動出力データ（LYRA）] --> A1
     E2[Forms<br>（対応部門の入力データ）] --> G2
 %%    F2[LYRA] --> G2
     G2[FileMaker] --> A2
 end
 subgraph 顧客データ
-    F1[品管顧客資料] --> B1
-    G1[eData] --> C1
-    H1[MI Access] --> D1
-    G1 --> C2
-    H1 --> D2
+    G1[eData] --> C2
+    H1[MI Access] --> D2
 end
 ```
